@@ -1,0 +1,180 @@
+/*
+Folha de estilo em produção da turma 47012*/
+*{
+  border: 0;
+  padding: 0;
+  margin: 0;
+  font-family: arial;
+
+}
+body{
+  background: url('../images/bgBody.jpg') repeat-x;
+}
+div{
+  width: 850px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+header{
+ float: left;
+ box-sizing: border-box;
+}
+header nav, footer {
+    width: 850px;
+    float: left;
+    background: #403F45;
+    height: 65px;
+    box-sizing: border-box;
+
+}
+header nav a {
+    padding: 20px 10px;
+    height: 25px;
+    float: right;
+    margin-right: 5px;
+    color: #fff;
+    text-decoration: none;
+
+}header nav a:hover,.active{
+  background: #FBED04;
+  color:#403F45;  
+
+}
+header nav a:first-child {
+    float: left;
+    background: none;
+    padding-top: 15px;
+}
+header div.banner{
+  height: 415px;
+  width:850px;
+  padding: 60px 0 0 60px;
+  float: left;
+}
+form {
+    width: 350px;
+    height: 250px;
+    box-sizing: border-box;
+    background: url('../images/formBg.png');
+    padding-top: 20px;
+    padding-left: 20px;
+}
+h1,h2 {
+    font-size: 21px;
+    font-weight: lighter;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+p{
+  font-size: 14px;
+  text-align: justify;
+  margin-bottom: 10px;
+
+}
+h2{
+  font-size: 14px;
+}
+label {
+    font-size: 14px;
+    font-weight: lighter;
+    width: 90px;
+    float: left;
+    padding: 5px;
+    color: #444;
+}
+input, select {
+    width: 200px;
+    height: 30px;
+    float: left;
+    margin-bottom: 5px;
+    border:1px solid #CCC;
+    box-sizing: border-box;
+    padding: 5px;
+    background: #fff;
+    color: #555;
+}
+input[type=date]{
+background-image: url(../images/inputCalendario.jpg);
+background-repeat: no-repeat;
+background-position-x: 170px;
+}
+form button{
+    width: 125px;
+    height: 40px;
+    background: #272727;
+    color: #FBED04;
+    float: left;
+    margin-left: 100px;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+section.conteiner{
+  width: 850px;
+  float: left;
+  padding: 20px 10px;
+  box-sizing: border-box;
+}
+section.conteiner > div.box{
+  width: 270px;
+  float: left;
+  margin-left: 10px;
+  text-align: center;
+}
+section.conteiner > div.box > a {
+    width: 125px;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    background: #403F45;
+    color: #FBED04;
+    text-decoration: none;
+    font-weight: bolder;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+section.conteiner > div:first-child{
+  margin-left: 0;
+}
+.image{
+  width: 200px;
+  height:200px;
+  margin: 10px auto;
+  border-radius: 100px;
+  margin-bottom: 30px;
+}
+figure.banner {
+    width: 650px;
+    height: 285px;
+    background-image: url('../images/servico-hotel.jpg');
+    margin-left: 100px;
+    margin-top: -20px;
+    margin-bottom: 10px;
+}
+.conforto{
+  background: url('../images/conforto.jpg') no-repeat;
+}
+.natura{
+  background: url('../images/natureza.jpg') no-repeat;
+}
+.luxo{
+  background: url('../images/luxo.jpg') no-repeat;
+}
+.banner-home{
+background: url('../images/banner.jpg');
+}
+.servico{
+  background: url('../images/servico-hotel.jpg') no-repeat 200px ;
+}
+article{
+  text-align: justify;
+}
+article .image{
+  float: left;
+  border: 1px solid #aaa;
+  margin-right: 20px;
+  padding: 10px;
+}
+footer{
+  padding: 20px;
+  color: #fff;
+  margin-bottom: 10px;
+}
