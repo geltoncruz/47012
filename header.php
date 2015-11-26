@@ -11,9 +11,9 @@
     <header>
       <nav>
         <a href="#"><img src="images/logo.png" alt="Logotipo"></a>
-        <a href="contato.html">Contato</a>
+        <a href="contato.php">Contato</a>
         <a href="servico.php">Serviço</a>
-        <a href="sobre.html">Sobre</a>
+        <a href="sobre.php">Sobre</a>
         <a href="index.php" class="active">Home</a>
       </nav>
       <div class="banner banner-home">
