@@ -1,7 +1,18 @@
 <?php
-$_POST['action'];
-if($_POST['action'] == 'insert'){
-  //echo "Dados Inseridos com sucesso!";
+
+if(isset($_POST['action']) == 'insert'){
+
+   $checkin = $_POST['checkin'];
+   $checkout = $_POST['checkout'];
+   $qtdAdulto = $_POST['qtdAdulto'];
+   $suite = $_POST['suite'];
+
+   $q = "INSERT INTO reserva ";
+   $q .= "(checkin,checkout,qtdAdulto,suite) ";
+   $q .= "VALUES ($checkin,$checkout,$qtdAdulto,$suite)";
+
+   $query = mysql_query($q);
+   $fechar = mysql_close;
 }
  ?>
 <!DOCTYPE html>
@@ -33,7 +44,7 @@ if($_POST['action'] == 'insert'){
           <label for="qtdAdulto">Adultos</label>
           <input type="number" name ="qtdAdulto" required placeholder="0" min="1" max="4">
           <label for="optSuite">Suíte</label>
-          <select name="" id="" required>
+          <select name="suite" id="" required>
             <option value="" >Escolha sua suíte</option>
             <option value="luxo" >Luxo</option>
           </select>
