@@ -1,3 +1,9 @@
+<?php
+$_POST['action'];
+if($_POST['action'] == 'insert'){
+  //echo "Dados Inseridos com sucesso!";
+}
+ ?>
 <!DOCTYPE html>
 <html>
   <head>
@@ -17,7 +23,8 @@
         <a href="index.php" class="active">Home</a>
       </nav>
       <div class="banner banner-home">
-        <form action="#" name="reserva">
+        <form action="<?php echo $_SERVER['PHP_SELF']; ?>" name="reserva" method="post">
+          <input type="hidden" name="action" value="insert">
           <h1>Faça sua Reserva!</h1>
           <label for="checkin">Chegada</label>
           <input type="date" name="checkin" required autofocus="" id="chkIn">
